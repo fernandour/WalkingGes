@@ -1,0 +1,23 @@
+	#contenido_pagina .cajon_amigos .titulo {
+		float: left;
+	    width: 100%;
+	    text-align: center;
+	    font-size: 28px;
+	    margin-bottom: 15px;
+	    text-decoration: underline;
+	    color: #4C5E80;
+		font-weight: bold;
+	}
+			#contenido_pagina .cajon_amigos .amigo .info_amigos .boton {
+				float: left;
+				width: 118px;
+				color: white;
+			}
+			#contenido_pagina .cajon_amigos .amigo .info_amigos .aceptar .boton {
+				margin-right: 5px;
+				background: rgba(5, 100, 24, 0.8);
+			}
+			#contenido_pagina .cajon_amigos .amigo .info_amigos .rechazar .boton {
+				margin-left: 4px;
+				background: rgba(203, 50, 52, 1);
+			}

@@ -1,0 +1,628 @@
+html, body {
+	height: 100%;
+	margin: 0;
+    font-family: 'Playfair Display', regular;
+    font-size: 16px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select {
+	height: 30px;
+	width: 292px;
+	margin: 0;
+	padding: 0 10px;
+	background: #FFFFFF;
+	border: 1px solid #BEB28A;
+    font-family: 'Playfair Display', regular;
+    font-size: 16px;
+}
+textarea {
+	height: 100px;
+	width: 270px;
+	margin: 0;
+	padding: 5px 10px;
+	background: #FFFFFF;
+	border: 1px solid #BEB28A;
+    font-family: 'Playfair Display', regular;
+    font-size: 16px;
+	resize: none;
+}
+input[type="submit"],
+input[type="button"] {
+	height: 30px;
+	width: 292px;
+	margin: 0;
+	padding: 0 10px;
+	background: #4C5E80;
+	color: #FFFFFF;
+	border: 0px;
+    font-family: 'Playfair Display', regular;
+    font-size: 16px;
+    cursor: pointer;
+	border-radius: 10px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+	outline:none;
+}
+.titulo {
+	float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.titulo_grande {
+	font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+	padding: 10px 0px;
+}
+.azul {
+	color: #4C5E80;
+}
+.dorado {
+	color: #BEB28A;
+}
+.mensaje_error {
+	width: calc(100% - 10px);
+	padding: 0px 5px;
+	text-align: center;
+	color: red;
+	margin-bottom: 5px;
+	margin-top: -5px;
+}
+#barra_superior {
+	width: 100%;
+	min-width: 675px;
+	height: 45px;
+	background: rgba(190,178,138,0.5);
+	font-family: "Playfair Display", serif;
+}
+	#barra_superior #contenido {
+		max-width: 1280px;
+		width: calc(100% - 40px);
+		min-width: 650px;
+		height: 100%;
+		margin: 0 auto;
+		color: #4C5E80;
+		font-weight: bold;
+	}
+		#barra_superior #contenido #bt_inicio {
+			float: left;
+			height: 100%;
+			width: 165px;
+			line-height: 45px;
+			cursor: pointer;
+			font-size: 30px;
+		}
+			#barra_superior #contenido #bt_inicio #logo {
+				float: left;
+				height: 41px;
+				margin-top: 2px;
+				margin-bottom: 2px;
+				padding-right: 4px;
+				cursor: pointer;
+			}
+			#barra_superior #contenido #bt_inicio #texto_logo {
+				float: left;
+			}
+			#barra_superior #contenido #bt_inicio #texto_logo:hover {
+				padding-left: 3px;
+				margin-top: -1px;
+			}
+	 		.hover_logo {
+				padding-left: 3px;
+				margin-top: -1px;
+			}
+		#barra_superior #contenido #menu {
+			float: right;
+			height: 100%;
+			font-size: 18px;
+		}
+			#barra_superior #contenido #menu .opcion {
+				float: left;
+				height: 25px;
+				text-align: center;
+				margin: 10px 0px 10px 10px;
+				padding-right: 10px;
+				line-height: 25px;
+				cursor: pointer;
+			}
+			#barra_superior #contenido #menu .opcion:hover {
+				text-decoration: underline;
+			}
+			#barra_superior #contenido #menu .borde_dcha {
+				border-right: 1px solid #4C5E80;
+			}
+			#barra_superior #contenido #menu #opcion_notificaciones,
+			#barra_superior #contenido #menu #opcion_admin {
+				position: relative;
+			}
+			#barra_superior #contenido #menu #opcion_notificaciones #img_notificaciones {
+				height: 23px;
+			}
+			#barra_superior #contenido #menu #opcion_notificaciones #num_notificaciones {
+				position: absolute;
+				top: -2px;
+				right: 1px;
+				width: 14px;
+				height: 14px;
+				line-height: 14px;
+				background-color: red;
+				border-radius: 50%;
+				font-size: 11px;
+				font-family: Arial;
+				color: #FFFFFF;
+			}
+			#barra_superior #contenido #menu #opcion_admin #publicaciones_pendientes {
+				position: absolute;
+				top: -1px;
+				right: 1px;
+				width: 11px;
+				height: 11px;
+				background-color: red;
+				border-radius: 50%;
+			}
+			#barra_superior #contenido #menu #opcion_ajustes #img_ajustes {
+				height: 23px;
+			}
+#contenido_pagina {
+	max-width: 1200px;
+	width: calc(100% - 80px);
+	min-width: 850px;
+	height: 100%;
+	margin: 0 auto;
+}
+	#contenido_pagina .info_pags {
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 25px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	#contenido_pagina #menu {
+		width: 100%;
+		height: 36px;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+		#contenido_pagina #menu .opcion {
+			text-align: center;
+			cursor: pointer;
+			background: #4C5E80;
+			font-size: 18px;
+			font-family: "Playfair Display", serif;
+			font-weight: bold;
+			color: #FFFFFF;
+			width: 250px;
+			height: 36px;
+			line-height: 36px;
+		}
+		#contenido_pagina #menu .opcion:hover {
+			font-size: 22px;
+		}
+		#contenido_pagina #menu .opcion_activa {
+			cursor: auto;
+			font-size: 22px;
+			background: rgba(76, 94, 128, 0.8);
+		}
+	#contenido_pagina #menu .buscador {
+		float: right;
+		width: 465px;
+	}
+		#contenido_pagina #menu .buscador #cuadro_busqueda {
+			float: left;
+			border-radius: 5px;
+			width: 400px;
+			height: 36px;
+			margin-right: 5px;
+		}
+		#contenido_pagina #menu .buscador #icn_buscar {
+			float: left;
+			height: 38px;
+			cursor: pointer;
+		}
+	#contenido_pagina .cajon_publicaciones {
+		width: 100%;
+		min-width: 615px;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+		#contenido_pagina .cajon_publicaciones .publicacion {
+			float: left;
+			width: calc(100% - 30px);
+			padding: 15px;
+			margin-bottom: 15px;
+			border-radius: 5px;
+			background: #FFFFFF;
+    		box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+		}
+			#contenido_pagina .cajon_publicaciones .publicacion .cabecera {
+				float: left;
+				width: calc(100% - 152px);
+				margin-bottom: 10px;
+				color: #4C5E80;
+				font-weight: bold;
+				font-size: 18px;
+			}
+				#contenido_pagina .cajon_publicaciones .publicacion .cabecera .nombre {
+					float: left;
+					width: 100%;
+					cursor: pointer;
+				}
+				#contenido_pagina .cajon_publicaciones .publicacion .cabecera .fecha {
+					float: left;
+					width: 100%;
+					font-family: Times New Roman;
+				}
+			#contenido_pagina .cajon_publicaciones .publicacion .estado {
+				float: left;
+				width: 100px;
+				line-height: 32px;
+				font-weight: bold;
+				font-size: 18px;
+				color: rgba(203, 50, 52, 1);
+			}
+			#contenido_pagina .cajon_publicaciones .publicacion .opciones {
+					float: right;
+				}
+					#contenido_pagina .cajon_publicaciones .publicacion .opciones .aprobar_publicacion {
+						cursor: pointer;
+						width: 45px;
+					}
+					#contenido_pagina .cajon_publicaciones .publicacion .opciones .rechazar_publicacion {
+						cursor: pointer;
+						width: 45px;
+					}
+					#contenido_pagina .cajon_publicaciones .publicacion .opciones .borrar_publicacion {
+						cursor: pointer;
+						width: 22px;
+					}
+			#contenido_pagina .cajon_publicaciones .publicacion .texto {
+				float: left;
+				width: 100%;
+				margin-bottom: 10px;
+			}
+				#contenido_pagina .cajon_publicaciones .publicacion .texto .titulo {
+					float: left;
+					width: 100%;
+					text-align: center;
+					font-weight: bold;
+					font-size: 20px;
+					text-decoration: underline;
+					color: #4C5E80;
+					margin-bottom: 8px;
+				}
+				#contenido_pagina .cajon_publicaciones .publicacion .texto .descripcion {
+					float: left;
+					width: 100%;
+					text-align: justify;
+					font-family: Times New Roman;
+					font-size: 18px;
+					line-height: 19px;
+				}
+			#contenido_pagina .cajon_publicaciones .publicacion .ver_datos_mapa {
+				float: left;
+				width: calc(100% - 20px);
+				text-align: center;
+				font-size: 20px;
+				margin-top: 10px;
+				margin-right: 10px;
+				margin-left: 10px;
+				cursor: pointer;
+			}
+				#contenido_pagina .cajon_publicaciones .publicacion .ver_datos_mapa .flechas {
+					float: left;
+					width: calc(50% - 75px);
+					text-align: center;
+					font-size: 20px;
+				}
+				#contenido_pagina .cajon_publicaciones .publicacion .ver_datos_mapa .texto {
+					float: left;
+					width: 150px;
+					text-align: center;
+					font-size: 20px;
+					font-weight: bold;
+					color: #4C5E80;
+				}
+			#contenido_pagina .cajon_publicaciones .publicacion .datos_mapa {
+				float: left;
+				width: 100%;
+				text-align: left;
+				font-size: 18px;
+				margin-top: 10px;
+				display: none;
+			}
+				#contenido_pagina .cajon_publicaciones .publicacion .datos_mapa .dato {
+					float: left;
+					width: calc(100% / 3);
+					margin-bottom: 5px;
+				}
+				#contenido_pagina .cajon_publicaciones .publicacion .datos_mapa .dato .dato_nombre {
+					float: left;
+					color: #4C5E80;
+				}
+				#contenido_pagina .cajon_publicaciones .publicacion .datos_mapa .dato .dato_texto {
+					float: left;
+					color: #000000;
+					margin-left: 5px;
+					font-family: Times New Roman;
+					line-height: 26px;
+				}
+			#contenido_pagina .cajon_publicaciones .publicacion .imagenes {
+				float: left;
+				position: relative;
+				width: 580px;
+				height: 375px;
+				background: rgba(255, 255, 255, 0.4);
+				margin-right: 5px;
+				margin-bottom: 5px;
+			}
+				#contenido_pagina .cajon_publicaciones .publicacion .imagenes .caja_carrusel {
+					position: relative;
+				    width: calc(100% - 56px);
+					height: 100%;
+				    z-index: 2;
+				    margin-left: 28px;
+				    overflow: hidden;
+				}
+					#contenido_pagina .cajon_publicaciones .publicacion .imagenes .caja_carrusel .carrusel {
+						float: left;
+					    position: relative;
+					    height: 100%;
+					    z-index: 1;
+					}
+						#contenido_pagina .cajon_publicaciones .publicacion .imagenes .caja_carrusel .carrusel .caja_imagen_carrusel {
+							float: left;
+							position: relative;
+						    width: 534px;
+							height: 375px;
+							line-height: 375px;
+							max-height: 100%;
+							text-align: center;
+						}
+							#contenido_pagina .cajon_publicaciones .publicacion .imagenes .caja_carrusel .carrusel .caja_imagen_carrusel .imagen_carrusel {
+							    max-height: 375px;
+								max-width: 534px;
+								vertical-align: middle;
+							}
+				#contenido_pagina .cajon_publicaciones .publicacion .imagenes .flecha_izquierda {
+					position: absolute;
+					left: 0px;
+					top: 167px;
+					cursor: pointer;
+					display: none;
+				}
+				#contenido_pagina .cajon_publicaciones .publicacion .imagenes .flecha_derecha {
+					position: absolute;
+					right: 0px;
+					top: 167px;
+					cursor: pointer;
+				}
+			#contenido_pagina .cajon_publicaciones .publicacion .mapa {
+				float: left;
+				width: 580px;
+				height: 375px;
+				margin-left: 5px;
+				z-index: 1;
+			}
+				#contenido_pagina .cajon_publicaciones .publicacion .mapa .mapa_descargar {
+					position: absolute;
+					bottom: 2px;
+					left: 2px;
+					z-index: 1000;
+					width: 45px;
+					cursor: pointer;
+				}
+
+	#contenido_pagina .cajon_publicaciones_mini {
+		float: left;
+		width: calc(100% - 300px);
+		min-width: 475px;
+		margin: 15px 0px 0px 0px;
+	}
+				#contenido_pagina .cajon_publicaciones_mini .publicacion .opciones .abrir_publicacion {
+						cursor: pointer;
+						width: 22px;
+					}
+				#contenido_pagina .cajon_publicaciones_mini .publicacion .opciones .borrar_publicacion {
+						margin-right: 4px;
+					}				
+			#contenido_pagina .cajon_publicaciones_mini .publicacion .texto {
+				width: 100%;
+			}
+				#contenido_pagina .cajon_publicaciones_mini .publicacion .texto .descripcion {
+					/* Limitamos el número de líneas que se muestran */
+					display: -webkit-box;
+					-webkit-line-clamp: 8; /* Número de lineas a mostrar */
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+				}
+				#contenido_pagina .cajon_publicaciones_mini .publicacion .texto .link_ver_mas,
+				#contenido_pagina .cajon_publicaciones_mini .publicacion .texto .link_ver_mas:visited {
+					float: right;
+					margin-top: 3px;
+					color: #4C5E80;
+					font-weight: bold;
+				}
+			#contenido_pagina .cajon_publicaciones_mini .publicacion .imagenes {
+				width: 430px;
+				height: 300px;
+			}
+						#contenido_pagina .cajon_publicaciones_mini .publicacion .imagenes .caja_carrusel .carrusel .caja_imagen_carrusel {
+						    width: 384px;
+							height: 300px;
+							line-height: 300px;
+						}
+							#contenido_pagina .cajon_publicaciones_mini .publicacion .imagenes .caja_carrusel .carrusel .caja_imagen_carrusel .imagen_carrusel {
+							    max-height: 300px;
+								max-width: 384px;
+							}
+				#contenido_pagina .cajon_publicaciones_mini .publicacion .imagenes .flecha_izquierda {
+					top: 130px;
+				}
+				#contenido_pagina .cajon_publicaciones_mini .publicacion .imagenes .flecha_derecha {
+					top: 130px;
+				}
+			#contenido_pagina .cajon_publicaciones_mini .publicacion .mapa {
+				width: 430px;
+				height: 300px;
+			}
+
+	#contenido_pagina .cajon_amigos {
+		float: left;
+		width: 100%;
+		margin-top: 10px;
+	}
+		#contenido_pagina .cajon_amigos .amigo {
+			float: left;
+			width: calc(33.3% - 12px);
+			min-width: 335px;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-bottom: 10px;
+			border: 1px solid #4C5E80;
+		}
+			#contenido_pagina .cajon_amigos .amigo .imagen_perfil {
+				float: left;
+			    width: 100px;
+			    height: 100px;
+			    border: 1px solid #BEB28A;
+			    border-radius: 50%;
+			    margin-top: 10px;
+			    margin-bottom: 10px;
+				margin-left: 10px;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+				cursor: pointer;
+			}
+			#contenido_pagina .cajon_amigos .amigo .nombre {
+				float: left;
+				text-align: center;
+			    width: calc(100% - 142px);
+			    margin-right: 15px;
+			    margin-left: 15px;
+			    margin-top: 26px;
+			    color: #4C5E80;
+			    font-weight: bold;
+			    font-size: 22px;
+				/* Hacemos que solo se muestre una línea */
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+				cursor: pointer;
+			}
+			#contenido_pagina .cajon_amigos .amigo .info_amigos {
+				float: left;
+			    width: calc(100% - 142px);
+			    margin-right: 15px;
+			    margin-left: 15px;
+				margin-top: 13px;
+			}
+				#contenido_pagina .cajon_amigos .amigo .info_amigos .boton {
+					margin: 0 auto;
+				    width: 200px;
+				    height: 35px;
+				    line-height: 35px;
+				    color: #FFFFFF;
+				    background: rgba(76, 94, 128, 0.8);
+				    text-align: center;
+				    border-radius: 10px;
+				    cursor: pointer;
+    				font-family: "Playfair Display", serif;
+					font-size: 22px;
+					font-weight: bold;
+				}
+				
+#contenedor_popup {
+	display: none;
+	content: " ";
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	overflow:hidden;
+	left: 0;
+	top: 0;
+	z-index: 2000;
+	background: rgba(127, 127, 127, 0.5);
+ }
+	#contenedor_popup #popup_ok {
+		display: none;
+		position: fixed;
+		top: 200px;
+		left: calc(50% - 60px);
+		width: 120px;
+		height: 120px;
+		padding: 10px 20px 20px;
+		text-align: center;
+		z-index: 2100;
+	}
+		#contenedor_popup #popup_ok img {
+			width: 100%;
+		}
+	#contenedor_popup .popup_mensaje {
+		display: none;
+		position: fixed;
+		top: 200px;
+		left: calc(50% - 204px);
+		width: 400px;
+		border: 4px solid #4C5E80;
+		border-radius: 5px;
+		background-color: #FFFFFF;
+		text-align: center;
+		z-index: 2100;
+	}
+		#contenedor_popup .popup_mensaje .popup_mensaje_cerrar {
+			float: right;
+			margin-top: 2px;
+			margin-right: 2px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			border-radius: 50%;
+			color: #FFFFFF;
+			background-color: red;
+			text-align: center;
+			cursor: pointer;
+		}
+		#contenedor_popup .popup_mensaje .popup_mensaje_mensaje {
+			float: left;
+			margin: 10px 25px 20px 25px;
+			width: calc(100% - 50px);
+			font-size: 18px;
+			color: #000000;
+			text-align: center;
+		}
+		#contenedor_popup .popup_mensaje .popup_mensaje_confirmacion_respuesta {
+			float: left;
+			margin-top: 2px;
+			margin-bottom: 15px;
+			width: 190px;
+			height: 35px;
+			line-height: 35px;
+			color: #FFFFFF;
+			text-align: center;
+			cursor: pointer;
+			border-radius: 10px;
+		}
+		#contenedor_popup .popup_mensaje #popup_mensaje_confirmacion_si {
+			margin-left: 7px;
+			background: rgba(203, 50, 52, 1);
+		}
+		#contenedor_popup .popup_mensaje #popup_mensaje_confirmacion_no {
+			margin-left: 6px;
+			background: rgba(76, 94, 128, 0.8);
+		}

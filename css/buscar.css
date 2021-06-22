@@ -1,0 +1,21 @@
+#contenido_pagina .resultados_busqueda {
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+}
+	#contenido_pagina .resultados_busqueda .resultados_personas {
+		float: left;
+		width: 100%;
+	}
+		#contenido_pagina .resultados_busqueda .resultados_personas .cajon_amigos {
+			margin-top: 0px;
+		}
+	#contenido_pagina .resultados_busqueda .resultados_publicaciones {
+		float: left;
+		width: 100%;
+		margin-top: 10px;
+	}
+		#contenido_pagina .resultados_busqueda .resultados_publicaciones .cajon_publicaciones {
+			float: none;
+			margin: 0 auto;
+}

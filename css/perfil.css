@@ -1,0 +1,201 @@
+#contenido_pagina #imagen_cabecera {
+	float: left;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #BEB28A;
+	border-radius: 50%;
+	margin-top: 10px;
+	background-position: center; /* Centra la imagen */
+	background-repeat: no-repeat; /* No repite la imagen */
+	background-size: cover; /* Redimensiona la imagen para ocupar todo el div */
+}
+.cursor_pointer {
+	cursor: pointer;
+}
+#contenido_pagina #nombre_cabecera {
+	float: left;
+	width: calc(100% - 320px);
+	margin-left: 5px;
+	height: 55px;
+	color: #4C5E80;
+    font-weight: bold;
+    font-size: 22px;
+	margin-top: 55px;
+}
+
+#contenido_pagina #add_amigos {
+	float: left;
+	width: 200px;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 35px;
+	color: #4C5E80;
+    font-weight: bold;
+    font-size: 22px;
+	margin-top: 70px;
+}
+
+#contenido_pagina #add_amigos .boton {
+	float: left;
+	width: 200px;
+	height: 35px;
+	line-height: 35px;
+	color: #FFFFFF;
+	background: rgba(76, 94, 128, 0.8);
+	text-align: center;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#contenido_pagina #menu {
+	float: left;
+	position: relative;
+	width: 100%;
+	margin-bottom: 10px;
+}
+	#contenido_pagina #menu .opcion {
+		float: left;
+		width: calc(25% - 1px);
+		border-right: 1px solid #FFFFFF;
+		border-radius: 10px 10px 0px 0px;
+	}
+	#contenido_pagina #menu #opcion_rutas {
+		position: relative;
+	}
+	#contenido_pagina #menu .add_ruta {
+		position: absolute;
+		top: 3px;
+		right: 3px;
+		border-radius: 50%;
+		width: 23px;
+		height: 23px;
+		line-height: 24px;
+		color: #FFFFFF;
+		border: 4px solid #FFFFFF;
+		text-align: center;
+		font-size: 20px;
+		font-family: Arial;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+#contenido_pagina .contenido_publicaciones {
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+#contenido_pagina .cajon_publicaciones {
+	float: none;
+	margin: 0 auto;
+}
+#contenido_pagina .cajon_rutas {
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+	#contenido_pagina .cajon_rutas .ruta {
+		float: left;
+		width: calc(50% - 12px);
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 15px;
+		border: 1px solid #4C5E80;
+	}
+		#contenido_pagina .cajon_rutas .ruta .titulo {
+			float: left;
+		    width: calc(100% - 80px);
+			margin-left: 40px;
+		    text-align: center;
+		    font-weight: bold;
+		    font-size: 18px;
+		    text-decoration: underline;
+		    color: #4C5E80;
+			margin-top: 8px;
+			margin-bottom: 7px;
+		    text-overflow: ellipsis;
+		    overflow: hidden;
+		    white-space: nowrap
+		}
+		#contenido_pagina .cajon_rutas .ruta .titulo:hover {
+    		text-overflow: clip;
+    		white-space: normal;
+		}
+		#contenido_pagina .cajon_rutas .ruta .opciones {
+					float: right;
+				}
+					#contenido_pagina .cajon_rutas .ruta .opciones .borrar_ruta {
+						cursor: pointer;
+						width: 22px;
+						margin-right: 4px;
+						margin-top: 4px;
+					}
+		#contenido_pagina .cajon_rutas .ruta .mapa {
+			position: relative;
+			width: calc(100% - 10px);
+			float: left;
+    		height: 365px;
+    		margin: 5px;
+			z-index: 1;
+		}
+			#contenido_pagina .cajon_rutas .ruta .mapa .mapa_descargar {
+				position: absolute;
+				bottom: 2px;
+				left: 2px;
+				z-index: 1000;
+				width: 45px;
+				cursor: pointer;
+			}
+
+#contenido_pagina #panel_crear_ruta {
+	width: calc(100% - 300px);
+	margin: 0 auto;
+	margin-top: 1px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+}
+	#contenido_pagina #panel_crear_ruta .titulo {
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 28px;
+		margin-bottom: 15px;
+		color: #4C5E80;
+	}
+	#contenido_pagina #panel_crear_ruta .opcion {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#contenido_pagina #panel_crear_ruta .opcion .nombre {
+		float: left;
+		width: 115px;
+	}
+	#contenido_pagina #panel_crear_ruta .opcion #f_titulo {
+		width: calc(100% - 137px);
+	}
+
+#contenido_pagina .contenido_informacion {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#contenido_pagina .cajon_informacion {
+	margin: 0 auto;
+	width: calc(100% - 300px);
+}
+	#contenido_pagina .cajon_informacion .dato {
+		float: left;
+		width: 50%;
+		margin-bottom: 5px;
+		font-size: 18px;
+	}
+		#contenido_pagina .cajon_informacion .dato .dato_nombre {
+			float: left;
+			color: #4C5E80;
+		}
+		#contenido_pagina .cajon_informacion .dato .dato_texto {
+			float: left;
+			margin-left: 5px;
+		}
+	

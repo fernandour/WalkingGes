@@ -1,0 +1,166 @@
+#contenido_pagina #menu #opcion_crear_publicacion {
+	float: left;
+	border-radius: 10px;
+}
+#contenido_pagina #panel_crear_publicacion {
+	width: calc(100% - 20px);
+	margin: 0 auto;
+	margin-top: 1px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	display: none;
+}
+	#contenido_pagina #panel_crear_publicacion .titulo {
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 28px;
+		margin-bottom: 15px;
+		color: #4C5E80;
+	}
+	#contenido_pagina #panel_crear_publicacion .opcion {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	#contenido_pagina #panel_crear_publicacion .opcion .nombre {
+		float: left;
+		width: 100px;
+	}
+	#contenido_pagina #panel_crear_publicacion .opcion #f_titulo,
+	#contenido_pagina #panel_crear_publicacion .opcion #f_descripcion {
+		width: calc(100% - 122px);
+	}
+	#contenido_pagina #panel_crear_publicacion .opcion #f_ruta {
+		width: calc(100% - 100px);
+	}
+	#contenido_pagina #panel_crear_publicacion .opcion .mensaje_ruta {
+		width: calc(100% - 100px);
+		margin-left: 100px;
+		cursor: pointer;
+	}
+#contenido_pagina .cajon_top_personas {
+	position: relative;
+	float: right;
+	width: 260px;
+	margin-top: 15px;
+	padding: 10px;
+}
+	#contenido_pagina .cajon_top_personas .titulo {
+		position: relative;
+		float: left;
+	    width: 100%;
+	    text-align: center;
+	    font-weight: bold;
+	    font-size: 18px;
+	    color: #4C5E80;
+	    margin-bottom: 8px;
+	}
+	#contenido_pagina .cajon_top_personas .informacion {
+		position: absolute;
+		right: 80px;
+	}
+		#contenido_pagina .cajon_top_personas .informacion #info {
+			width: 20px;
+		}
+			.tooltip {
+				position: relative;
+				float: left;
+				display: inline-block;
+			}
+				.tooltip .tooltiptext {
+					visibility: hidden;
+					width: 135px;
+					background-color: #4C5E80;
+					color: #FFFFFF;
+					text-align: center;
+					border-radius: 6px;
+					padding: 5px;
+					position: absolute;
+					right: -146px;
+					top: -25px;
+					z-index: 1;
+				}
+				.tooltip:hover .tooltiptext {
+					visibility: visible;
+				}
+	#contenido_pagina .cajon_top_personas .cajon_tarjetas {
+		margin: 0 auto;
+		width: 250px;
+		margin-top: 35px;
+	}
+		#contenido_pagina .cajon_top_personas .cajon_tarjetas .tarjeta {
+			float: left;
+			width: 250px;
+			height: 340px;
+			margin-bottom: 15px;
+			border-radius: 5px;
+			box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+		}
+			#contenido_pagina .cajon_top_personas .cajon_tarjetas .tarjeta .imagen_perfil {
+				margin: 15px auto;
+			    width: 120px;
+			    height: 120px;
+			    border: 1px solid #BEB28A;
+			    border-radius: 50%;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+				cursor: pointer;
+			}
+			#contenido_pagina .cajon_top_personas .cajon_tarjetas .tarjeta .nombre {
+			    width: calc(100% - 20px);
+				padding: 0px 10px;
+				text-align: center;
+			    color: #4C5E80;
+			    font-weight: bold;
+			    font-size: 22px;
+				display: -webkit-box;
+				-webkit-line-clamp: 2; /* Número de lineas a mostrar */
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+				cursor: pointer;
+			}
+			#contenido_pagina .cajon_top_personas .cajon_tarjetas .tarjeta .num_publicaciones {
+			    width: calc(100% - 20px);
+				padding: 0px 10px;
+				margin-top: 15px;
+			}
+				#contenido_pagina .cajon_top_personas .cajon_tarjetas .tarjeta .num_publicaciones .numero {
+					float: left;
+					width: 70px;
+					color: #BEB28A;
+					text-align: right;
+					font-size: 40px;
+					font-weight: bold;
+					margin-right: 10px;
+				}
+				#contenido_pagina .cajon_top_personas .cajon_tarjetas .tarjeta .num_publicaciones .texto {
+					float: left;
+					width: calc(100% - 80px);
+					color: #4C5E80;
+					font-size: 20px;
+				}
+			#contenido_pagina .cajon_top_personas .cajon_tarjetas .tarjeta .info_amigos {
+				float: left;
+			    width: calc(100% - 20px);
+				padding: 0px 10px;
+				margin-top: 15px;
+			}
+				#contenido_pagina .cajon_top_personas .cajon_tarjetas .tarjeta .info_amigos .boton {
+					margin: 0 auto;
+				    width: 200px;
+				    height: 35px;
+				    line-height: 35px;
+				    color: #FFFFFF;
+				    background: rgba(76, 94, 128, 0.8);
+				    text-align: center;
+				    border-radius: 10px;
+				    cursor: pointer;
+					font-size: 22px;
+					font-weight: bold;
+				}
+				#contenido_pagina .cajon_top_personas .cajon_tarjetas .tarjeta .info_amigos .texto_enhorabuena {
+					text-align: center;
+				    color: #4C5E80;
+					font-size: 19px;
+				}
